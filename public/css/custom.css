@@ -1,0 +1,189 @@
+iframe{
+  width:100%;
+  height:100%;
+}
+  body {
+    background-color: #FFFFFF;
+  }
+  .main.container {
+    margin-top: 2em;
+  }
+
+  .main.menu {
+    /* margin-top: 4em; */
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+      box-shadow 0.5s ease,
+      padding 0.5s ease
+    ;
+  }
+  .main.menu .item img.logo {
+    margin-right: 1.5em;
+  }
+  .main.menu .item {
+    color: #5ac4a9;
+    /* 0.92857143em 1.14285714em */
+    /* padding: 0.92857143em 0.7em; */
+    padding: 0 0.5em 0 0.5em;
+    font-size: 1.1em;
+  }
+  
+  .ui.list .list > a.item, .ui.list > a.item {
+    cursor: pointer;
+    color: #5ac4a9;
+}
+  .overlay {
+    float: left;
+    margin: 0em 3em 1em 0em;
+  }
+  .overlay .menu {
+    position: relative;
+    left: 0;
+    transition: left 0.9s ease;
+  }
+
+  .main.menu.fixed {
+    background-color: #FFFFFF;
+    border: 1px solid #DDD;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .overlay.fixed .menu {
+    left: 800px;
+  }
+
+  .text.container .left.floated.image {
+    margin: 2em 2em 2em -4em;
+  }
+  .text.container .right.floated.image {
+    margin: 2em -4em 2em 2em;
+  }
+
+  .ui.footer.segment {
+    margin: 5em 0em 0em;
+    /* padding: 5em 0em; */
+    padding: 3em 0em;
+  }
+
+  /* 
+ my menu 
+  */
+
+  /* .main.menu {
+    margin-top: 4em;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    transition:
+    box-shadow 0.5s ease,
+    padding 0.5s ease;
+} */
+
+.secondary.menu {
+    display: none !important ;
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.main.menu {
+    display: none !important;
+  }
+  .main.menu .item,
+  .main.menu .menu {
+    display: none;
+  }
+  .secondary.menu {
+    display: block!important;
+  }
+}
+
+/* scroll top */
+
+.scrollTop {
+  position: fixed;
+  right: 1%;
+  bottom: 10px;
+  background-color: #5ac4a9;
+  padding: 5px;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.scrollTop a {
+  /* font-size: 18px; */
+  color: white;
+}
+
+
+/* responsive */
+/* Mobile */
+
+@media only screen and (max-width: 767px) {
+  [class*="mobile hidden"],
+  [class*="tablet only"]:not(.mobile),
+  [class*="computer only"]:not(.mobile),
+  [class*="large monitor only"]:not(.mobile),
+  [class*="widescreen monitor only"]:not(.mobile),
+  [class*="or lower hidden"] {
+    display: none !important;
+  }
+}
+
+
+/* Tablet / iPad Portrait */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  [class*="mobile only"]:not(.tablet),
+  [class*="tablet hidden"],
+  [class*="computer only"]:not(.tablet),
+  [class*="large monitor only"]:not(.tablet),
+  [class*="widescreen monitor only"]:not(.tablet),
+  [class*="or lower hidden"]:not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Computer / Desktop / iPad Landscape */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  [class*="mobile only"]:not(.computer),
+  [class*="tablet only"]:not(.computer),
+  [class*="computer hidden"],
+  [class*="large monitor only"]:not(.computer),
+  [class*="widescreen monitor only"]:not(.computer),
+  [class*="or lower hidden"]:not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Large Monitor */
+
+@media only screen and (min-width: 1200px) and (max-width: 1919px) {
+  [class*="mobile only"]:not([class*="large monitor"]),
+  [class*="tablet only"]:not([class*="large monitor"]),
+  [class*="computer only"]:not([class*="large monitor"]),
+  [class*="large monitor hidden"],
+  [class*="widescreen monitor only"]:not([class*="large monitor"]),
+  [class*="or lower hidden"]:not(.computer):not(.tablet):not(.mobile) {
+    display: none !important;
+  }
+}
+
+
+/* Widescreen Monitor */
+
+@media only screen and (min-width: 1920px) {
+  [class*="mobile only"]:not([class*="widescreen monitor"]),
+  [class*="tablet only"]:not([class*="widescreen monitor"]),
+  [class*="computer only"]:not([class*="widescreen monitor"]),
+  [class*="large monitor only"]:not([class*="widescreen monitor"]),
+  [class*="widescreen monitor hidden"],
+  [class*="widescreen monitor or lower hidden"] {
+    display: none !important;
+  }
+}
+/**
+https://jsfiddle.net/8LkLoxcx/
+*/
